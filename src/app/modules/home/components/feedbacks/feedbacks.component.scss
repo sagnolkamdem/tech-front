@@ -1,0 +1,19 @@
+.step0 {
+    transform: translate3d(0, 0, 0);
+}
+
+.step1 {
+    transform: translate3d(-620px, 0, 0);
+}
+
+.step2 {
+    transform: translate3d(-1100px, 0, 0);
+}
+
+.backStep {
+    transform: translate3d(0, 0, 0);
+}
+
+.smooth {
+    transition: transform 300ms ease-in-out;
+}

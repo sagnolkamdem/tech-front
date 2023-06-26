@@ -1,0 +1,59 @@
+<div class="mt-14">
+    <div class="overflow-hidden mx-auto max-w-7xl py-12 px-4 sm:px-6 lg:px-8">
+      <div class="mb-14">
+        <h1 class="text-2xl font-bold tracking-tight sm:text-center text-primary-900 dark:text-white sm:text-4xl">
+          Don’t just take our word for it.
+        </h1>
+  
+        <p class="mt-4 text-lg leading-8 text-slate-600 dark:text-slate-400 sm:text-center">
+          Hear from some of our amazing users who are use our platform.
+        </p>
+      </div>
+  
+      <div class="pb-16 sm:pt-10 sm:pb-24 overflow-hidden px-2 carousel">
+        <ul
+          role="list"
+          [style]="scrollClass"
+          class="[perspective:50rem] origin-center flex gap-6 mb-8 ease-out duration-300">
+          <tech-comment *ngFor="let comment of comments" [comment]="comment"></tech-comment>
+        </ul>
+        <!-- <ul role="list" class="[perspective:50rem] origin-center overflow-y-scroll flex gap-6 mb-8"></ul> -->
+  
+        <div class="flex gap-8">
+          <button
+            (click)="prev()"
+            class="w-14 h-14 rounded-full border border-gray-200 dark:border-gray-500 inline-flex justify-center items-center hover:scale-125">
+            <span class="sr-only">Arrow left</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6 text-gray-500"
+              aria-hidden="true">
+              <path
+                fill-rule="evenodd"
+                d="M11.03 3.97a.75.75 0 010 1.06l-6.22 6.22H21a.75.75 0 010 1.5H4.81l6.22 6.22a.75.75 0 11-1.06 1.06l-7.5-7.5a.75.75 0 010-1.06l7.5-7.5a.75.75 0 011.06 0z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+          <button
+            (click)="next()"
+            class="w-14 h-14 rounded-full border border-gray-200 dark:border-gray-500 inline-flex justify-center items-center hover:scale-125">
+            <span class="sr-only">Arrow right</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6 text-gray-500"
+              aria-hidden="true">
+              <path
+                fill-rule="evenodd"
+                d="M12.97 3.97a.75.75 0 011.06 0l7.5 7.5a.75.75 0 010 1.06l-7.5 7.5a.75.75 0 11-1.06-1.06l6.22-6.22H3a.75.75 0 010-1.5h16.19l-6.22-6.22a.75.75 0 010-1.06z"
+                clip-rule="evenodd" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,1 +1,10 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.cdnfonts.com/css/dosis');
+@import url('https://fonts.cdnfonts.com/css/dancing-moon-script');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+    font-family: 'Dosis', sans-serif;
+}

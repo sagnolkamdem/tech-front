@@ -1,0 +1,386 @@
+<header class="mx-5 sm:px-8 py-4 z-50">
+    <div class="flex items-center">
+      <div class="flex items-center max-xl:w-full">
+        <a href="/" class="h-full">
+          <img src="/assets/logo/complete.png" class="w-auto h-10" alt="tech camer logo" />
+        </a>
+  
+        <tech-search customClass="ml-7 xl:w-60 w-full"></tech-search>
+  
+        <div class="flex xl:hidden">
+          <button
+            type="button"
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+            <span class="sr-only">Open main menu</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="hidden ml-6 w-8 h-8 text-slate-700 max-xl:block">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+          </button>
+        </div>
+      </div>
+  
+      <!-- {/* Mobile menu */} -->
+  
+      <!-- <div *ngIf="showMobileMenu" role="dialog" aria-modal="true">
+              <div class="fixed transition duration-1000 inset-0 top-14 z-10 overflow-y-auto bg-white dark:bg-gray-900 px-6 py-5 xl:hidden">
+                  {/* <div class="flex h-9 items-center justify-between">
+                      <div class="h-full">
+                          <Image width={200} height={40} src={bigLogo} alt="tech camer logo"/>
+                      </div>
+  
+                      <div class="flex">
+                          <button onClick={handleSwitchShowMobileMenu} type="button" class="inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                              <span class="sr-only">Close menu</span>
+                              <ArrowLongRightIcon class="w-8 h-8 text-slate-700" />
+                          </button>
+                      </div>
+                  </div> */}
+                  <div class="mt-6 flow-root">
+                      <div class="-my-6 divide-y divide-gray-500/10">
+                          <div class="space-y-2 py-6">
+                              <Link 
+                                  href="/made-in-cmr" 
+                                  class={clsx(
+                                      "-mx-3 block rounded-lg py-2 px-10 text-base font-semibold leading-7",
+                                      {
+                                          "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/made-in-cmr",
+                                          "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/made-in-cmr",
+                                      }
+                                  )}>
+                                      Made in CMR
+                              </Link>
+  
+                              <Link 
+                                  href="/jobs" 
+                                  class={clsx(
+                                      "-mx-3 block rounded-lg py-2 px-10 text-base font-semibold leading-7",
+                                      {
+                                          "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/jobs",
+                                          "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/jobs",
+                                      }
+                                  )}>
+                                      Jobs
+                              </Link>
+  
+                              <Link 
+                                  href="/events" 
+                                  class={clsx(
+                                      "-mx-3 block rounded-lg py-2 px-10 text-base font-semibold leading-7",
+                                      {
+                                          "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/events",
+                                          "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/events",
+                                      }
+                                  )}>
+                                      Events
+                                  </Link>
+  
+                              <Link 
+                                  href="/blog" 
+                                  class={clsx(
+                                      "-mx-3 block rounded-lg py-2 px-10 text-base font-semibold leading-7",
+                                      {
+                                          "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/blog",
+                                          "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/blog",
+                                      }
+                                  )}>
+                                      Blog
+                              </Link>
+  
+                              <Link 
+                                  href="/inspiration" 
+                                  class={clsx(
+                                      "-mx-3 block rounded-lg py-2 px-10 text-base font-semibold leading-7",
+                                      {
+                                          "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/inspirations",
+                                          "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/inspirations",
+                                      }
+                                  )}>
+                                      Inspirations
+                                      <span class="ml-0.5 text-slate-400 text-xs">(Soon)</span>
+                              </Link>
+  
+                              <Link 
+                                  href="#" 
+                                  class={clsx(
+                                      "-mx-3 block rounded-lg py-2 px-10 text-base font-semibold leading-7",
+                                      {
+                                          "text-primary-600 hover:text-primary-400 dark:text-primary-600": pathname === "/carreers",
+                                          "text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100": pathname !== "/carreers",
+                                      }
+                                  )}>
+                                      Carreers
+                                      <span class="ml-0.5 text-slate-400 text-xs">(Soon)</span>
+                              </Link>
+                          </div>
+                          <div class="py-6 px-7">
+                              <div class="flex flex-col gap-6 items-start justify-start">
+  
+                                  <Button href="login">Se connecter</Button>
+  
+                                  <Button href="share-made-in-cameroon" intent="primary">Partager votre solution</Button>
+                                  
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div> -->
+  
+      <div class="hidden xl:flex justify-end flex-1 ml-7">
+        <nav
+          class="flex justify-end items-center text-slate-700 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">
+          <a
+            routerLink="/made-in-cmr"
+            routerLinkActive="active"
+            class="-mx-3 block mr-6 rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-600 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">
+            Made in CMR
+          </a>
+  
+          <a
+            routerLink="/events"
+            routerLinkActive="active"
+            class="-mx-3 block mr-6 rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-600 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">
+            Events
+          </a>
+  
+          <a
+            routerLink="/blog"
+            routerLinkActive="active"
+            class="-mx-3 block mr-6 rounded-lg py-2 px-3 text-base font-semibold leading-7 text-slate-600 hover:text-slate-900 dark:text-white dark:hover:text-slate-100">
+            Blog
+          </a>
+  
+          <button
+            class="-mx-3 block mr-6 rounded-lg py-2 px-3 text-base font-semibold leading-7 relative"
+            type="button"
+            (click)="openMenu = !openMenu">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+              aria-hidden="true">
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M6.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM12.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0zM18.75 12a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+            </svg>
+  
+            <div
+              [@openClose]="openMenu"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+              [ngClass]="openMenu ? 'flex' : 'hidden'"
+              class="absolute z-10 mt-3 top-10 w-screen max-w-xs px-2 sm:px-0 -translate-x-1/2 transform left-1/2">
+              <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                <div class="relative grid text-left gap-6 dark:bg-gray-800 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                  <a
+                    href="/jobs"
+                    class="-m-3 block rounded-md p-3 transition duration-150 ease-in-out hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <p class="text-base font-medium text-slate-900 dark:text-white">Jobs</p>
+                    <p class="mt-1 text-sm text-slate-500">Be aware of the latest job opportunities in tech.</p>
+                  </a>
+  
+                  <a
+                    href="/inspirations"
+                    class="-m-3 block rounded-md p-3 transition duration-150 ease-in-out hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <p class="text-base font-medium text-slate-900 dark:text-white">
+                      Inspirations
+                      <span class="ml-0.5 text-slate-400 text-xs">(Soon)</span>
+                    </p>
+                    <p class="mt-1 text-sm text-slate-500">
+                      Get inspired by the careers of the most famous engineers in Cameroon.
+                    </p>
+                  </a>
+  
+                  <a
+                    href="careers"
+                    class="-m-3 block rounded-md p-3 transition duration-150 ease-in-out hover:bg-gray-50 dark:hover:bg-gray-700">
+                    <p class="text-base font-medium text-slate-900 dark:text-white">
+                      Careers
+                      <span class="ml-0.5 text-slate-400 text-xs">(Soon)</span>
+                    </p>
+                    <p class="mt-1 text-sm text-slate-500">Learn about the many careers available to you in tech.</p>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </button>
+  
+          <!-- <Transition
+                      show={showFlyoutMenu}
+                      enter="transition ease-out duration-200"
+                      enterFrom="opacity-0 translate-y-1"
+                      enterTo="opacity-100 translate-y-0 z-30"
+                      leave="transition ease-in duration-150"
+                      leaveFrom="opacity-100 translate-y-0"
+                      leaveTo="opacity-0 translate-y-1 z-30"
+                  >
+                      <div class="absolute z-10 mt-3 top-10 w-screen max-w-xs px-2 sm:px-0 -translate-x-1/2 transform left-1/2">
+                          <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                              <div class="relative grid gap-6 dark:bg-gray-800 bg-white px-5 py-6 sm:gap-8 sm:p-8">
+                                  <Link href="/jobs" class="-m-3 block rounded-md p-3 transition duration-150 ease-in-out hover:bg-gray-50 dark:hover:bg-gray-700">
+                                      <p class="text-base font-medium text-slate-900 dark:text-white">Jobs</p>
+                                      <p class="mt-1 text-sm text-slate-500">Be aware of the latest job opportunities in tech.</p>
+                                  </Link>
+                          
+                                  <Link href="/inspirations" class="-m-3 block rounded-md p-3 transition duration-150 ease-in-out hover:bg-gray-50 dark:hover:bg-gray-700">
+                                      <p class="text-base font-medium text-slate-900 dark:text-white">
+                                          Inspirations
+                                          <span class="ml-0.5 text-slate-400 text-xs">(Soon)</span>
+                                      </p>
+                                      <p class="mt-1 text-sm text-slate-500">Get inspired by the careers of the most famous engineers in Cameroon.</p>
+                                  </Link>
+                          
+                                  <Link href="careers" class="-m-3 block rounded-md p-3 transition duration-150 ease-in-out hover:bg-gray-50 dark:hover:bg-gray-700">
+                                      <p class="text-base font-medium text-slate-900 dark:text-white">
+                                          Careers
+                                          <span class="ml-0.5 text-slate-400 text-xs">(Soon)</span>
+                                      </p>
+                                      <p class="mt-1 text-sm text-slate-500">Learn about the many careers available to you in tech.</p>
+                                  </Link>
+                              </div>
+                          </div>
+                      </div>
+                  </Transition> -->
+        </nav>
+  
+        <div class="flex gap-4 items-center ml-20">
+          <tech-link [intent]="undefined" href="/login">Log in</tech-link>
+  
+          <tech-link href="/register" intent="primary">Register</tech-link>
+  
+          <button
+            (click)="openThemeMenu = !openThemeMenu"
+            class="relative w-8 h-8 rounded-full shadow-md flex justify-center items-center dark:bg-gray-700">
+            <svg
+              *ngIf="theme === 'light'"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6 text-green-600">
+              <path
+                d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+            </svg>
+  
+            <svg
+              *ngIf="theme !== 'light'"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="currentColor"
+              class="w-6 h-6 text-green-600">
+              <path
+                fill-rule="evenodd"
+                d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                clip-rule="evenodd" />
+            </svg>
+  
+            <div
+              [@openClose]="openThemeMenu"
+              role="menu"
+              aria-orientation="vertical"
+              aria-labelledby="menu-button"
+              tabindex="-1"
+              [ngClass]="openThemeMenu ? 'flex' : 'hidden'"
+              class="absolute z-10 mt-3 top-10 w-36 px-2 sm:px-0 -translate-x-1/2 transform">
+              <div class="overflow-hidden rounded-lg shadow-lg ring-1 ring-black ring-opacity-5">
+                <div class="relative grid text-left gap-1 dark:bg-gray-800 bg-white p-3">
+                  <li
+                    [ngClass]="{ 'bg-gray-50 dark:bg-gray-900/40': theme === 'dark' }"
+                    class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 hover:bg-gray-100 dark:hover:bg-gray-900 ng-star-inserted">
+                    <button
+                      name="darkButton"
+                      id="darkButton"
+                      class="p-1 bg-white rounded-md shadow ring-1 ring-slate-900/5 dark:bg-gray-700 dark:ring-inset dark:ring-white/5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-6 h-6 text-primary-600">
+                        <path
+                          fill-rule="evenodd"
+                          d="M9.528 1.718a.75.75 0 01.162.819A8.97 8.97 0 009 6a9 9 0 009 9 8.97 8.97 0 003.463-.69.75.75 0 01.981.98 10.503 10.503 0 01-9.694 6.46c-5.799 0-10.5-4.701-10.5-10.5 0-4.368 2.667-8.112 6.46-9.694a.75.75 0 01.818.162z"
+                          clip-rule="evenodd" />
+                      </svg>
+                    </button>
+                    <div class="ml-3 text-primary-600 dark:text-slate-400">Dark</div>
+                  </li>
+                  <li
+                    [ngClass]="{ 'bg-gray-50 dark:bg-gray-900/40': theme !== 'light' }"
+                    class="flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 hover:bg-gray-100 dark:hover:bg-gray-900 ng-star-inserted">
+                    <button
+                      name="darkButton"
+                      id="darkButton"
+                      class="p-1 bg-white rounded-md shadow ring-1 ring-slate-900/5 dark:bg-gray-700 dark:ring-inset dark:ring-white/5">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        class="w-6 h-6 text-primary-600">
+                        <path
+                          d="M12 2.25a.75.75 0 01.75.75v2.25a.75.75 0 01-1.5 0V3a.75.75 0 01.75-.75zM7.5 12a4.5 4.5 0 119 0 4.5 4.5 0 01-9 0zM18.894 6.166a.75.75 0 00-1.06-1.06l-1.591 1.59a.75.75 0 101.06 1.061l1.591-1.59zM21.75 12a.75.75 0 01-.75.75h-2.25a.75.75 0 010-1.5H21a.75.75 0 01.75.75zM17.834 18.894a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 10-1.061 1.06l1.59 1.591zM12 18a.75.75 0 01.75.75V21a.75.75 0 01-1.5 0v-2.25A.75.75 0 0112 18zM7.758 17.303a.75.75 0 00-1.061-1.06l-1.591 1.59a.75.75 0 001.06 1.061l1.591-1.59zM6 12a.75.75 0 01-.75.75H3a.75.75 0 010-1.5h2.25A.75.75 0 016 12zM6.697 7.757a.75.75 0 001.06-1.06l-1.59-1.591a.75.75 0 00-1.061 1.06l1.59 1.591z" />
+                      </svg>
+                    </button>
+                    <div class="ml-3 text-primary-600 dark:text-slate-400">Light</div>
+                  </li>
+                </div>
+              </div>
+            </div>
+          </button>
+  
+          <!-- <Transition
+                      show={isShowing}
+                      enter="transition-opacity duration-75"
+                      enterFrom="opacity-0"
+                      enterTo="opacity-100"
+                      leave="transition-opacity duration-150"
+                      leaveFrom="opacity-100"
+                      leaveTo="opacity-0"
+                      class="fixed z-50"
+                  >
+  
+                      <ul aria-labelledby="tailwind-list-label" aria-orientation="vertical" id="tailwind-listbox-options" role="listbox" class="fixed z-50 p-3 mt-3 space-y-1 text-sm font-medium bg-white shadow-md top-16 right-5 w-36 rounded-xl shadow-black/5 ring-1 ring-black/5 dark:bg-gray-800 dark:ring-white/5 ng-star-inserted">
+                          <li class={clsx(
+                              "flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 hover:bg-gray-100 dark:hover:bg-gray-900/40 ng-star-inserted",
+                              {
+                                  "bg-gray-50": theme === "light"
+                              }
+                          )}>
+                              <button name="lightButton" id="lightButton" onClick={() => {
+                                  handleSwitchTheme('light');
+                              }} class="p-1 bg-white rounded-md shadow ring-1 ring-slate-900/5 dark:bg-gray-700 dark:ring-inset dark:ring-white/5">
+                                  <SunIcon class="w-6 h-6 text-green-600" />
+                              </button>
+                              <div class="ml-3 text-green-500">Light</div>
+                          </li>
+                          
+                          <li class={clsx(
+                              "flex cursor-pointer select-none items-center rounded-[0.625rem] p-1 hover:bg-gray-100 dark:hover:bg-gray-900 ng-star-inserted",
+                              {
+                                  "bg-gray-50 dark:bg-gray-900/40": theme === "dark"
+                              }
+                          )}>
+                              <button name="darkButton" id="darkButton" onClick={() => {
+                                  handleSwitchTheme('dark');
+                              }}  class="p-1 bg-white rounded-md shadow ring-1 ring-slate-900/5 dark:bg-gray-700 dark:ring-inset dark:ring-white/5">
+                                  <MoonIcon class="w-6 h-6 text-green-600" />
+                              </button>
+                              <div class="ml-3 text-slate-700 dark:text-slate-400">Dark</div>
+                          </li>
+                      </ul>
+                  </Transition> -->
+        </div>
+      </div>
+    </div>
+  </header>
+  
