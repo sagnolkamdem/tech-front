@@ -5,7 +5,7 @@ import { Component, Input, OnInit } from "@angular/core";
   template: `
     <span
       [ngClass]="customClass"
-      class="inline-flex capitalize items-center rounded-full px-3 py-0.5 text-sm font-medium"
+      class="inline-flex capitalize items-center bg-purple-100 text-purple-800 rounded-full px-3 py-0.5 text-sm font-medium"
     >
       <ng-content></ng-content>
     </span>
